@@ -5,14 +5,14 @@ import { DashboardLayout } from '@syncfusion/ej2-layouts';
 import { CircularGauge } from '@syncfusion/ej2-circulargauge';
 import { gauge1, gauge2, gauge3 } from './gauge-component';
 import { Grid } from '@syncfusion/ej2-grids';
-import { gridComponent } from './grid-component';
-import { Maps} from '@syncfusion/ej2-maps';
-import { mapsComponent } from './map-component';
-import { Chart, Legend, Tooltip, ColumnSeries, Category, DataLabel, ChartModel  } from '@syncfusion/ej2-charts';
+import { gridComponent } from './grid-component';// importing grid component model
+import { Maps} from '@syncfusion/ej2-maps'; 
+import { mapsComponent } from './map-component'; // importing map component initialization
+import { Chart, Legend, Tooltip, ColumnSeries, Category, DataLabel  } from '@syncfusion/ej2-charts';
 Chart.Inject(ColumnSeries, DataLabel, Category, Legend, Tooltip);
-import { columnChartComponent } from './chart-component';
+import { columnChartComponent } from './chart-component';// importing column chart model
 
-
+// initializing DashboardLayout component
 let dashboard: DashboardLayout = new DashboardLayout({
     columns: 5,
     cellSpacing: [25, 25],
@@ -47,10 +47,10 @@ let dashboard: DashboardLayout = new DashboardLayout({
     ]
 });
 dashboard.appendTo('#editLayout');
-let chart: Chart = new Chart (columnChartComponent(),'#colChart')
-let grid: Grid = new Grid(gridComponent(),'#Grid');
-let map: Maps = new Maps(mapsComponent(), "#map");
-let germany: CircularGauge = new CircularGauge(gauge1(), '#container1');
+let chart: Chart = new Chart (columnChartComponent(),'#colChart')// initializing chart component
+let grid: Grid = new Grid(gridComponent(),'#Grid'); // initializing grid component
+let map: Maps = new Maps(mapsComponent(), "#map"); // intitalizing map component 
+let germany: CircularGauge = new CircularGauge(gauge1(), '#container1'); // intitalizing gauge components
 let usa: CircularGauge = new CircularGauge(gauge2(), '#container2');
 let uk: CircularGauge = new CircularGauge(gauge3(), '#container3');
 
