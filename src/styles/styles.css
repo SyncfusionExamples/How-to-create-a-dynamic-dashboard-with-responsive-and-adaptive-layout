@@ -1,6 +1,7 @@
 @import '../../node_modules/@syncfusion/ej2/material.css';
 @import '../../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-circulargauge/styles/material.css';
+
+
 
 /* samples related styles  */
 .e-dashboard-layout.e-control .e-panel .e-panel-container .e-panel-header {    
@@ -12,6 +13,17 @@
     .e-dashboard-layout.e-control .e-panel .e-panel-header{
         font-size: 15px;
     }
+    .cont-ele1, .cont-ele2,.cont-ele3 {
+        display: inline-block;
+        height: 100%;
+    }
+
+    .cont-ele1, .cont-ele3{
+        width:30%;
+    }
+    .cont-ele2{
+        width:40%;
+    }
 
     @media (max-width: 650px) {
       #pieChart,
@@ -20,8 +32,42 @@
       #pie,
       #map {
         width: 100% !important;
-        height: 40% !important;
+        height: 100% !important;
       }
+    }
+
+    @media (max-width: 1000px) {
+        .e-panel .e-panel-content .right{
+            height: 40px;
+            width: 40px
+        }
+        .e-panel .e-panel-content .card{
+            text-align: left;
+        }
+        .e-panel .e-panel-content .e-icons.profile,.e-panel .e-panel-content .e-icons.settings,.e-panel .e-panel-content .e-icons.views {
+            font-size: 20px;
+            line-height: 45px;
+        }
+        .e-panel .e-panel-content h3,.e-panel .e-panel-content h4 {
+            font-size: 16px;
+            margin: 0 5px 0;
+        }
+    }
+
+    .e-panel .e-panel-content .small .right{
+        height: 40px;
+        width: 40px
+    }
+    .e-panel .e-panel-content .small .card{
+        text-align: left;
+    }
+    .e-panel .e-panel-content .small .e-icons.profile,.e-panel .e-panel-content .small .e-icons.settings,.e-panel .e-panel-content .small .e-icons.views {
+        font-size: 20px;
+        line-height: 45px;
+    }
+    .e-panel .e-panel-content .small h3,.e-panel .e-panel-content .small h4 {
+        font-size: 16px;
+        margin: 0 5px 0;
     }
 
     #sidebar-section{
@@ -147,7 +193,7 @@
 
     .card {
       text-align: right;
-      padding: 25px 5rem;
+      padding: 2rem 2rem;
     }
 
     .left{
