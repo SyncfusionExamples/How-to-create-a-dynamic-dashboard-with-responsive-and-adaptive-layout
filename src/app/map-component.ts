@@ -4,8 +4,8 @@ Maps.Inject(Zoom, Legend, MapsTooltip);
 
 export function mapsComponent(): Maps {
     let maps: Maps = new Maps({
-        height: "266px",
-        width: "570px",
+        height: "100%",
+        width: "100%",
         zoomSettings: {
             enable: false,
             zoomFactor: 7,

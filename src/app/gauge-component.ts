@@ -11,7 +11,6 @@ export function gauge1(): CircularGauge {
         },
         axes: [{
             annotations: [{
-                content: '#germany',
                 angle: 180, zIndex: '1',
                 radius: '30%'
             }, {
@@ -35,7 +34,7 @@ export function gauge1(): CircularGauge {
                 color: '#FC8213'
             }],
             pointers: [{
-                value: 75, radius: '60%',
+                radius: '60%',
                 animation: { enable: false },
                 color: '#777777', pointerWidth: 5,
                 cap: {
@@ -49,7 +48,8 @@ export function gauge1(): CircularGauge {
                 }
             }]
         }],
-        width:"140px",
+        width:"100%",
+        height: "100%"
     });
     return gauge1;
 }
@@ -62,7 +62,6 @@ export function gauge2(): CircularGauge {
         },
         axes: [{
             annotations: [{
-                content: '#usa',
                 angle: 180, zIndex: '1',
                 radius: '30%'
             }, {
@@ -100,7 +99,8 @@ export function gauge2(): CircularGauge {
                 }
             }]
         }],
-        width:"280px",
+        width:"100%",
+        height: "100%"
     });
     return gauge2;
 }
@@ -113,7 +113,6 @@ export function gauge3(): CircularGauge {
         },
         axes: [{
             annotations: [{
-                content: '#uk',
                 angle: 180, zIndex: '1',
                 radius: '30%'
             }, {
@@ -137,7 +136,7 @@ export function gauge3(): CircularGauge {
                 color: '#FC8213'
             }],
             pointers: [{
-                value: 25, radius: '60%',
+                value: 45, radius: '60%',
                 animation: { enable: false },
                 color: '#777777', pointerWidth: 5,
                 cap: {
@@ -151,7 +150,8 @@ export function gauge3(): CircularGauge {
                 }
             }]
         }],
-        width:"140px",
+        height: "100%",
+        width:"100%"
     });
     return gauge3;
 }

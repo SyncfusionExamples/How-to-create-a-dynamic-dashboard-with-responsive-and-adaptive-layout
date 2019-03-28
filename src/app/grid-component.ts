@@ -121,13 +121,13 @@ export function gridComponent(): GridModel {
     
     
     let girdModel: GridModel = {};
-    girdModel.dataSource = getTradeData(6);
+    girdModel.dataSource = getTradeData(8);
     girdModel.allowSelection = true;
     girdModel.allowFiltering =true;
     girdModel.allowSorting= true;
     girdModel.filterSettings = {type:'Menu'};
     girdModel.enableHover = false;
-    girdModel.rowHeight = 38;
+    girdModel.rowHeight = 35;
     girdModel.columns =  [
         {
             field: 'Employees', headerText: 'Name', clipMode: 'EllipsisWithTooltip',
@@ -147,6 +147,6 @@ export function gridComponent(): GridModel {
     girdModel.dataBound = startTimer;
     girdModel.actionComplete = complete;
     girdModel.allowPaging = true;
-    girdModel.pageSettings = {pageSize:4};
+    girdModel.pageSettings = {pageSize:6};
     return girdModel;
 }

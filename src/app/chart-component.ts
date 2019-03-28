@@ -34,7 +34,7 @@ export function columnChartComponent(): ChartModel {
         type: 'Column', xName: 'month', width: 10, yName: 'sales', fill: '#FC8213'
     },];
 
-    chartModel.height= "266px",
-    chartModel.width= "570px"
+    chartModel.height= "100%",
+    chartModel.width= "100%"
     return chartModel
 }
